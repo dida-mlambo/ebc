@@ -928,6 +928,785 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    padding: 120px 0 80px;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Values Section */
+.values {
+    padding: 80px 0;
+    background: white;
+}
+
+.values h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.value-card {
+    background: #f7fafc;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #c53030, #e53e3e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.value-card h3 {
+    color: #1a365d;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.value-card p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Leadership Section */
+.leadership {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.leadership h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.leader-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.leader-card:hover {
+    transform: translateY(-5px);
+}
+
+.leader-image {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #1a365d, #2d3748);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.leader-card h3 {
+    color: #c53030;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.leader-card h4 {
+    color: #1a365d;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.leader-card p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Course Details */
+.course-details {
+    margin: 20px 0;
+}
+
+.course-details h4 {
+    color: #1a365d;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.course-info {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.course-duration,
+.course-mode {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #c53030;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.course-requirements {
+    margin-top: 20px;
+}
+
+.course-requirements h4 {
+    color: #1a365d;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.course-requirements ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course-requirements ul li {
+    color: #4a5568;
+    padding: 3px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.course-requirements ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #c53030;
+    font-weight: bold;
+}
+
+/* Admission Steps */
+.admission {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.admission h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.admission-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #c53030, #e53e3e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    color: #1a365d;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.step p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Enrollment Contact */
+.enrollment-contact {
+    padding: 80px 0;
+    background: white;
+}
+
+.enrollment-contact .contact-card {
+    background: linear-gradient(135deg, #1a365d, #2d3748);
+    color: white;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.enrollment-contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.enrollment-contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Calendar Specific Styles */
+.current-semester {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.semester-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 4px solid #c53030;
+}
+
+.semester-card h2 {
+    font-family: 'Playfair Display', serif;
+    color: #1a365d;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.semester-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4a5568;
+    font-size: 1rem;
+}
+
+.detail-item i {
+    color: #c53030;
+    font-size: 1.2rem;
+}
+
+.calendar-events {
+    padding: 80px 0;
+    background: white;
+}
+
+.calendar-events h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.calendar-category.academic {
+    background: #3182ce;
+    color: white;
+}
+
+.calendar-category.spiritual {
+    background: #c53030;
+    color: white;
+}
+
+.calendar-category.practical {
+    background: #38a169;
+    color: white;
+}
+
+.calendar-category.ceremony {
+    background: #d69e2e;
+    color: white;
+}
+
+.calendar-category.orientation {
+    background: #805ad5;
+    color: white;
+}
+
+.calendar-category.break {
+    background: #718096;
+    color: white;
+}
+
+/* Academic Year */
+.academic-year {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.academic-year h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.year-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.semester-block {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #c53030;
+}
+
+.semester-block h3 {
+    color: #1a365d;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.semester-info p {
+    color: #4a5568;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Notices */
+.notices {
+    padding: 80px 0;
+    background: white;
+}
+
+.notices h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.notices-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.notice-card {
+    background: #fff5f5;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid #c53030;
+    transition: transform 0.3s ease;
+}
+
+.notice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.notice-icon {
+    width: 50px;
+    height: 50px;
+    background: #c53030;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.notice-card h3 {
+    color: #1a365d;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+.notice-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Donation Specific Styles */
+.donation-impact {
+    padding: 80px 0;
+    background: white;
+}
+
+.donation-impact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.impact-card {
+    background: #f7fafc;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.impact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #c53030, #e53e3e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.impact-card h3 {
+    color: #1a365d;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.impact-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.impact-amount {
+    background: #c53030;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Donate Main */
+.donate-main {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.donation-testimonial {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 4px solid #c53030;
+    margin-top: 30px;
+}
+
+.donation-testimonial blockquote {
+    font-style: italic;
+    color: #4a5568;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.donation-testimonial cite {
+    color: #c53030;
+    font-weight: 600;
+}
+
+/* Form Enhancements */
+.donation-type,
+.amount-section,
+.designation-section,
+.donor-info {
+    margin-bottom: 25px;
+}
+
+.type-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.type-btn {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    background: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.type-btn.active,
+.type-btn:hover {
+    border-color: #c53030;
+    background: #c53030;
+    color: white;
+}
+
+.form-select {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: #c53030;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #4a5568;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+}
+
+.security-note {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    color: #4a5568;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+}
+
+/* Other Ways to Give */
+.other-ways {
+    padding: 80px 0;
+    background: white;
+}
+
+.other-ways h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ways-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.way-card {
+    background: #f7fafc;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease;
+}
+
+.way-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.way-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1a365d, #2d3748);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.way-card h3 {
+    color: #1a365d;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.way-card p {
+    color: #4a5568;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.bank-details,
+.mobile-details {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.bank-details p,
+.mobile-details p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.volunteer-list,
+.donation-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.volunteer-list li,
+.donation-list li {
+    color: #4a5568;
+    padding: 3px 0;
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.9rem;
+}
+
+.volunteer-list li::before,
+.donation-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #c53030;
+    font-weight: bold;
+}
+
+/* Contact Cards */
+.calendar-contact,
+.donation-contact {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.calendar-contact .contact-card,
+.donation-contact .contact-card {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-contact h2,
+.donation-contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #1a365d;
+    margin-bottom: 20px;
+}
+
+.calendar-contact p,
+.donation-contact p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
 /* WhatsApp Chat Bot */
 .whatsapp-chat {
     position: fixed;
