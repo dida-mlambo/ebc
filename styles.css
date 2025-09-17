@@ -359,11 +359,7 @@ body.loading {
 }
 
 .slide-text {
-    animation: slideInLeft 1s ease-out;
-}
-
-.slide.active .slide-text {
-    animation: slideInLeft 1s ease-out;
+    opacity: 1;
 }
 
 .slide-title {
@@ -372,7 +368,6 @@ body.loading {
     font-weight: 700;
     margin-bottom: 20px;
     line-height: 1.2;
-    animation: fadeInUp 1s ease 0.3s both;
 }
 
 .slide-subtitle {
@@ -380,7 +375,6 @@ body.loading {
     font-weight: 600;
     color: #ffd700;
     margin-bottom: 15px;
-    animation: fadeInUp 1s ease 0.5s both;
 }
 
 .slide-description {
@@ -388,26 +382,20 @@ body.loading {
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.7;
-    animation: fadeInUp 1s ease 0.7s both;
 }
 
 .slide-buttons {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    animation: fadeInUp 1s ease 0.9s both;
 }
 
 .slide-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: slideInRight 1s ease-out;
 }
 
-.slide.active .slide-image {
-    animation: slideInRight 1s ease-out;
-}
 
 .slide-logo {
     background: rgba(255, 255, 255, 0.1);
@@ -415,7 +403,6 @@ body.loading {
     border-radius: 20px;
     padding: 40px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    animation: logoScale 1s ease 0.5s both;
 }
 
 .slide-logo-img {

@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add loading class to body
     document.body.classList.add('loading');
     
-    // Hide loading screen after 3 seconds
+    // Hide loading screen after 2 seconds
     setTimeout(() => {
         const loader = document.querySelector('.loader-container');
         if (loader) {
@@ -316,14 +316,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // Remove loader from DOM after transition
             setTimeout(() => {
                 loader.remove();
+                // Initialize slider after loading screen is removed
+                initializeSlider();
             }, 500);
         }
-    }, 3000);
+    }, 2000);
     
     console.log('Evangel Bible College website loaded successfully!');
-    
-    // Initialize slider
-    initializeSlider();
     
     // Add any additional initialization here
     initializeSearch();
@@ -331,15 +330,26 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Slider Functionality
 let currentSlideIndex = 0;
-const slides = document.querySelectorAll('.slide');
-const indicators = document.querySelectorAll('.indicator');
+let slides = [];
+let indicators = [];
 let slideInterval;
 
 function initializeSlider() {
+    // Get fresh references to slides and indicators
+    slides = document.querySelectorAll('.slide');
+    indicators = document.querySelectorAll('.indicator');
+    
     if (slides.length === 0) return;
     
-    // Start auto-slide
-    startAutoSlide();
+    console.log('Initializing slider with', slides.length, 'slides');
+    
+    // Ensure first slide is active
+    showSlide(0);
+    
+    // Start auto-slide after a delay
+    setTimeout(() => {
+        startAutoSlide();
+    }, 1000);
     
     // Pause auto-slide on hover
     const sliderContainer = document.querySelector('.hero-slider');
@@ -446,20 +456,3 @@ document.addEventListener('keydown', function(e) {
 });
 
 // Initialize all functionality
-
-// Keyboard Navigation Support
-document.addEventListener('keydown', function(e) {
-    // ESC key closes mobile menu
-    if (e.key === 'Escape') {
-        const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        if (navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            
-            const bars = hamburger.querySelectorAll('.bar');
-            bars.forEach(bar => bar.classList.remove('active'));
-        }
-    }
-});
