@@ -1326,13 +1326,14 @@ section {
 /* Leadership Section */
 .leadership {
     padding: 80px 0;
-    background: #f7fafc;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    color: white;
 }
 
 .leadership h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #ffd700;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1344,12 +1345,15 @@ section {
 }
 
 .leader-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 .leader-card:hover {
@@ -1378,14 +1382,14 @@ section {
 }
 
 .leader-card h4 {
-    color: #1a365d;
+    color: #ffd700;
     font-size: 1.4rem;
     margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
 }
 
 .leader-card p {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
 }
 
@@ -1987,6 +1991,145 @@ section {
     left: 0;
     color: #c53030;
     font-weight: bold;
+}
+
+/* History Section */
+.history {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: white;
+}
+
+.history h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.history-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.history-text h3 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.history-text h3:first-child {
+    margin-top: 0;
+}
+
+.history-text p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Facilities Section */
+.facilities {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    color: white;
+}
+
+.facilities h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.facility-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.facility-card:hover {
+    transform: translateY(-10px);
+}
+
+.facility-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #c53030, #e53e3e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 auto 20px;
+}
+
+.facility-card h3 {
+    color: #ffd700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.facility-card p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+/* Accreditation Section */
+.accreditation {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: white;
+}
+
+.accreditation h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.accreditation-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.accreditation-text h3 {
+    color: #ffd700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+.accreditation-text h3:first-child {
+    margin-top: 0;
+}
+
+.accreditation-text p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
 /* Contact Cards */
