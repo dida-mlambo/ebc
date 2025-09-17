@@ -317,6 +317,10 @@ document.addEventListener('DOMContentLoaded', function() {
             loader.classList.add('hidden');
             document.body.classList.remove('loading');
             
+            // Ensure scrolling is enabled
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
+            
             // Remove loader from DOM after transition
             setTimeout(() => {
                 loader.remove();
@@ -326,6 +330,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add any additional initialization here
     initializeSearch();
+    
+    // Ensure scrolling is always enabled (fallback for all pages)
+    setTimeout(() => {
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+        document.body.classList.remove('loading');
+    }, 100);
 });
 
 // Slider functionality removed to eliminate glitches

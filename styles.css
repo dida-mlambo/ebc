@@ -16,6 +16,25 @@ body.loading {
     overflow: hidden;
 }
 
+/* Ensure proper scrolling on all pages */
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+}
+
+/* Force minimum content height for scrolling */
+main {
+    min-height: 100vh;
+}
+
+/* Ensure sections have proper spacing */
+section {
+    position: relative;
+    z-index: 1;
+}
+
 /* Loading Screen */
 .loader-container {
     position: fixed;
@@ -1228,6 +1247,8 @@ body.loading {
     color: white;
     text-align: center;
     margin-top: 80px;
+    min-height: auto;
+    height: auto;
 }
 
 .page-header h1 {
