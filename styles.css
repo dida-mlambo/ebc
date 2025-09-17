@@ -481,7 +481,7 @@ body.loading {
 /* Mission & Vision Section */
 .mission-vision {
     padding: 80px 0;
-    background: #f7fafc;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
 }
 
 .mission-vision-grid {
@@ -492,12 +492,15 @@ body.loading {
 
 .mission-card,
 .vision-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 .mission-card:hover,
@@ -523,12 +526,12 @@ body.loading {
     font-family: 'Playfair Display', serif;
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #1a365d;
+    color: #ffd700;
 }
 
 .mission-card p,
 .vision-card p {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.7;
     font-size: 1.05rem;
 }
@@ -536,7 +539,8 @@ body.loading {
 /* About Section */
 .about {
     padding: 80px 0;
-    background: white;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    color: white;
 }
 
 .about-content {
@@ -549,12 +553,12 @@ body.loading {
 .about h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #ffd700;
     margin-bottom: 25px;
 }
 
 .about p {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 30px;
@@ -579,13 +583,13 @@ body.loading {
 }
 
 .highlight-item h4 {
-    color: #1a365d;
+    color: #ffd700;
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
 .highlight-item p {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.8);
     margin: 0;
     font-size: 0.95rem;
 }
@@ -612,20 +616,21 @@ body.loading {
 /* Courses Section */
 .courses {
     padding: 80px 0;
-    background: #f7fafc;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: white;
 }
 
 .courses h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #ffd700;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .section-subtitle {
     text-align: center;
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1.1rem;
     margin-bottom: 50px;
     max-width: 600px;
@@ -640,12 +645,15 @@ body.loading {
 }
 
 .course-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    border-top: 4px solid #c53030;
+    border-top: 4px solid #ffd700;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 .course-card:hover {
@@ -668,13 +676,13 @@ body.loading {
 
 .course-card h3 {
     font-family: 'Playfair Display', serif;
-    color: #1a365d;
+    color: #ffd700;
     font-size: 1.4rem;
     margin-bottom: 15px;
 }
 
 .course-card > p {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -685,7 +693,7 @@ body.loading {
 }
 
 .course-features li {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.8);
     padding: 5px 0;
     position: relative;
     padding-left: 20px;
@@ -695,7 +703,7 @@ body.loading {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #c53030;
+    color: #ffd700;
     font-weight: bold;
 }
 
@@ -703,7 +711,7 @@ body.loading {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #c53030;
+    color: #ffd700;
     font-weight: 600;
     font-size: 0.9rem;
 }
@@ -711,13 +719,14 @@ body.loading {
 /* Calendar Section */
 .calendar {
     padding: 80px 0;
-    background: white;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    color: white;
 }
 
 .calendar h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #ffd700;
     text-align: center;
     margin-bottom: 15px;
 }
@@ -729,14 +738,17 @@ body.loading {
 }
 
 .calendar-item {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     display: flex;
     gap: 20px;
     transition: all 0.3s ease;
-    border-left: 4px solid #c53030;
+    border-left: 4px solid #ffd700;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 .calendar-item:hover {
@@ -774,14 +786,14 @@ body.loading {
 }
 
 .calendar-content h4 {
-    color: #1a365d;
+    color: #ffd700;
     font-size: 1.2rem;
     margin-bottom: 8px;
     font-family: 'Playfair Display', serif;
 }
 
 .calendar-content p {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -919,13 +931,14 @@ body.loading {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background: #f7fafc;
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: white;
 }
 
 .contact h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #ffd700;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -947,9 +960,12 @@ body.loading {
     align-items: flex-start;
     gap: 15px;
     padding: 20px;
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 .contact-item i {
@@ -959,21 +975,24 @@ body.loading {
 }
 
 .contact-item h4 {
-    color: #1a365d;
+    color: #ffd700;
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
 
 .contact-item p {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.9);
     margin: 0;
 }
 
 .contact-form-container {
-    background: white;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 .contact-form .form-group input,
@@ -1013,20 +1032,21 @@ body.loading {
 /* Location Map Section */
 .location-map {
     padding: 80px 0;
-    background: white;
+    background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+    color: white;
 }
 
 .location-map h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #ffd700;
     text-align: center;
     margin-bottom: 15px;
 }
 
 .map-description {
     text-align: center;
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.1rem;
     margin-bottom: 40px;
     max-width: 600px;
