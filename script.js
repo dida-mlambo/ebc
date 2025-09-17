@@ -301,24 +301,151 @@ function initializeSearch() {
     }
 }
 
-// Initialize all functionality
+// Loading Screen Management
 document.addEventListener('DOMContentLoaded', function() {
+    // Add loading class to body
+    document.body.classList.add('loading');
+    
+    // Hide loading screen after 3 seconds
+    setTimeout(() => {
+        const loader = document.querySelector('.loader-container');
+        if (loader) {
+            loader.classList.add('hidden');
+            document.body.classList.remove('loading');
+            
+            // Remove loader from DOM after transition
+            setTimeout(() => {
+                loader.remove();
+            }, 500);
+        }
+    }, 3000);
+    
     console.log('Evangel Bible College website loaded successfully!');
+    
+    // Initialize slider
+    initializeSlider();
     
     // Add any additional initialization here
     initializeSearch();
+});
+
+// Slider Functionality
+let currentSlideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const indicators = document.querySelectorAll('.indicator');
+let slideInterval;
+
+function initializeSlider() {
+    if (slides.length === 0) return;
     
-    // Add smooth fade-in animation to main content
-    const mainContent = document.querySelector('main');
-    if (mainContent) {
-        mainContent.style.opacity = '0';
-        mainContent.style.transition = 'opacity 0.5s ease';
+    // Start auto-slide
+    startAutoSlide();
+    
+    // Pause auto-slide on hover
+    const sliderContainer = document.querySelector('.hero-slider');
+    if (sliderContainer) {
+        sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+        sliderContainer.addEventListener('mouseleave', startAutoSlide);
+    }
+}
+
+function showSlide(index) {
+    // Remove active class from all slides and indicators
+    slides.forEach(slide => slide.classList.remove('active'));
+    indicators.forEach(indicator => indicator.classList.remove('active'));
+    
+    // Add active class to current slide and indicator
+    if (slides[index]) {
+        slides[index].classList.add('active');
+    }
+    if (indicators[index]) {
+        indicators[index].classList.add('active');
+    }
+    
+    currentSlideIndex = index;
+}
+
+function changeSlide(direction) {
+    let newIndex = currentSlideIndex + direction;
+    
+    if (newIndex >= slides.length) {
+        newIndex = 0;
+    } else if (newIndex < 0) {
+        newIndex = slides.length - 1;
+    }
+    
+    showSlide(newIndex);
+}
+
+function currentSlide(index) {
+    showSlide(index - 1);
+}
+
+function nextSlide() {
+    changeSlide(1);
+}
+
+function startAutoSlide() {
+    stopAutoSlide(); // Clear any existing interval
+    slideInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+}
+
+function stopAutoSlide() {
+    if (slideInterval) {
+        clearInterval(slideInterval);
+    }
+}
+
+// Touch/Swipe Support for Mobile
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = touchStartX - touchEndX;
+    
+    if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+            // Swiped left - next slide
+            changeSlide(1);
+        } else {
+            // Swiped right - previous slide
+            changeSlide(-1);
+        }
+    }
+}
+
+// Keyboard Navigation
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') {
+        changeSlide(-1);
+    } else if (e.key === 'ArrowRight') {
+        changeSlide(1);
+    } else if (e.key === 'Escape') {
+        // ESC key closes mobile menu
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
         
-        setTimeout(() => {
-            mainContent.style.opacity = '1';
-        }, 100);
+        if (navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+            
+            const bars = hamburger.querySelectorAll('.bar');
+            bars.forEach(bar => bar.classList.remove('active'));
+        }
     }
 });
+
+// Initialize all functionality
 
 // Keyboard Navigation Support
 document.addEventListener('keydown', function(e) {
