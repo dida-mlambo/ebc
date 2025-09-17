@@ -289,6 +289,12 @@ body.loading {
     margin-top: 80px;
 }
 
+/* Fallback: Show first slide if JavaScript fails */
+.slide:first-child {
+    opacity: 1;
+    visibility: visible;
+}
+
 .slider-container {
     position: relative;
     width: 100%;
@@ -302,13 +308,15 @@ body.loading {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    visibility: hidden;
+    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
     display: flex;
     align-items: center;
 }
 
 .slide.active {
     opacity: 1;
+    visibility: visible;
 }
 
 .slide-background {

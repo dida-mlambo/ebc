@@ -303,10 +303,17 @@ function initializeSearch() {
 
 // Loading Screen Management
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Evangel Bible College website loaded successfully!');
+    
     // Add loading class to body
     document.body.classList.add('loading');
     
-    // Hide loading screen after 2 seconds
+    // Initialize slider immediately for GitHub Pages
+    setTimeout(() => {
+        initializeSlider();
+    }, 100);
+    
+    // Hide loading screen after 1.5 seconds
     setTimeout(() => {
         const loader = document.querySelector('.loader-container');
         if (loader) {
@@ -316,13 +323,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Remove loader from DOM after transition
             setTimeout(() => {
                 loader.remove();
-                // Initialize slider after loading screen is removed
-                initializeSlider();
             }, 500);
         }
-    }, 2000);
-    
-    console.log('Evangel Bible College website loaded successfully!');
+    }, 1500);
     
     // Add any additional initialization here
     initializeSearch();
@@ -335,44 +338,82 @@ let indicators = [];
 let slideInterval;
 
 function initializeSlider() {
-    // Get fresh references to slides and indicators
-    slides = document.querySelectorAll('.slide');
-    indicators = document.querySelectorAll('.indicator');
+    // Wait for DOM to be fully ready
+    const checkAndInit = () => {
+        slides = document.querySelectorAll('.slide');
+        indicators = document.querySelectorAll('.indicator');
+        
+        if (slides.length === 0) {
+            // Try again in 100ms if slides not found
+            setTimeout(checkAndInit, 100);
+            return;
+        }
+        
+        console.log('Initializing slider with', slides.length, 'slides');
+        
+        // Clear any existing intervals
+        stopAutoSlide();
+        
+        // Reset all slides
+        slides.forEach((slide, index) => {
+            slide.classList.remove('active');
+            if (index === 0) slide.classList.add('active');
+        });
+        
+        // Reset all indicators
+        indicators.forEach((indicator, index) => {
+            indicator.classList.remove('active');
+            if (index === 0) indicator.classList.add('active');
+        });
+        
+        currentSlideIndex = 0;
+        
+        // Start auto-slide after initialization
+        setTimeout(() => {
+            startAutoSlide();
+        }, 2000);
+        
+        // Pause auto-slide on hover
+        const sliderContainer = document.querySelector('.hero-slider');
+        if (sliderContainer) {
+            // Remove existing listeners to prevent duplicates
+            sliderContainer.removeEventListener('mouseenter', stopAutoSlide);
+            sliderContainer.removeEventListener('mouseleave', startAutoSlide);
+            
+            sliderContainer.addEventListener('mouseenter', stopAutoSlide);
+            sliderContainer.addEventListener('mouseleave', startAutoSlide);
+        }
+    };
     
-    if (slides.length === 0) return;
-    
-    console.log('Initializing slider with', slides.length, 'slides');
-    
-    // Ensure first slide is active
-    showSlide(0);
-    
-    // Start auto-slide after a delay
-    setTimeout(() => {
-        startAutoSlide();
-    }, 1000);
-    
-    // Pause auto-slide on hover
-    const sliderContainer = document.querySelector('.hero-slider');
-    if (sliderContainer) {
-        sliderContainer.addEventListener('mouseenter', stopAutoSlide);
-        sliderContainer.addEventListener('mouseleave', startAutoSlide);
-    }
+    checkAndInit();
 }
 
 function showSlide(index) {
-    // Remove active class from all slides and indicators
-    slides.forEach(slide => slide.classList.remove('active'));
-    indicators.forEach(indicator => indicator.classList.remove('active'));
-    
-    // Add active class to current slide and indicator
-    if (slides[index]) {
-        slides[index].classList.add('active');
+    try {
+        // Ensure we have valid slides and indicators
+        if (!slides || slides.length === 0) return;
+        
+        // Remove active class from all slides and indicators
+        slides.forEach(slide => {
+            if (slide) slide.classList.remove('active');
+        });
+        
+        indicators.forEach(indicator => {
+            if (indicator) indicator.classList.remove('active');
+        });
+        
+        // Add active class to current slide and indicator
+        if (slides[index]) {
+            slides[index].classList.add('active');
+        }
+        if (indicators[index]) {
+            indicators[index].classList.add('active');
+        }
+        
+        currentSlideIndex = index;
+    } catch (error) {
+        console.error('Error in showSlide:', error);
     }
-    if (indicators[index]) {
-        indicators[index].classList.add('active');
-    }
-    
-    currentSlideIndex = index;
 }
 
 function changeSlide(direction) {
