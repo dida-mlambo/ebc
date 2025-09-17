@@ -198,13 +198,13 @@ section {
     font-family: 'Playfair Display', serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #1a365d;
+    color: #40E0D0;
     line-height: 1.2;
 }
 
 .tagline {
     font-size: 0.85rem;
-    color: #c53030;
+    color: #40E0D0;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -219,7 +219,7 @@ section {
 
 .nav-link {
     text-decoration: none;
-    color: #2d3748;
+    color: #96DED1;
     font-weight: 500;
     font-size: 0.95rem;
     transition: all 0.3s ease;
@@ -230,7 +230,7 @@ section {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #c53030;
+    color: #40E0D0;
 }
 
 .nav-link::after {
@@ -240,7 +240,7 @@ section {
     left: 50%;
     width: 0;
     height: 2px;
-    background: #c53030;
+    background: #40E0D0;
     transition: all 0.3s ease;
     transform: translateX(-50%);
 }
@@ -251,12 +251,12 @@ section {
 }
 
 .donate-btn {
-    background: linear-gradient(135deg, #c53030, #e53e3e);
+    background: linear-gradient(135deg, #40E0D0, #96DED1);
     color: white !important;
     border-radius: 25px;
     padding: 10px 20px !important;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(197, 48, 48, 0.3);
+    box-shadow: 0 4px 15px rgba(64, 224, 208, 0.4);
     transition: all 0.3s ease;
 }
 
@@ -266,7 +266,7 @@ section {
 
 .donate-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(197, 48, 48, 0.4);
+    box-shadow: 0 6px 20px rgba(64, 224, 208, 0.6);
     color: white !important;
 }
 
@@ -280,7 +280,7 @@ section {
 .bar {
     width: 25px;
     height: 3px;
-    background: #2d3748;
+    background: #96DED1;
     transition: 0.3s;
     border-radius: 2px;
 }
@@ -462,14 +462,14 @@ section {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #c53030, #e53e3e);
+    background: linear-gradient(135deg, #40E0D0, #96DED1);
     color: white;
-    box-shadow: 0 6px 20px rgba(197, 48, 48, 0.3);
+    box-shadow: 0 6px 20px rgba(64, 224, 208, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(197, 48, 48, 0.4);
+    box-shadow: 0 8px 25px rgba(64, 224, 208, 0.6);
 }
 
 .btn-outline {
@@ -480,7 +480,7 @@ section {
 
 .btn-outline:hover {
     background: white;
-    color: #1a365d;
+    color: #40E0D0;
     transform: translateY(-3px);
 }
 
@@ -608,7 +608,7 @@ section {
 
 .highlight-item i {
     font-size: 1.5rem;
-    color: #c53030;
+    color: #40E0D0;
     margin-top: 5px;
 }
 
@@ -694,7 +694,7 @@ section {
 .course-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #c53030, #e53e3e);
+    background: linear-gradient(135deg, #40E0D0, #96DED1);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -787,7 +787,7 @@ section {
 }
 
 .calendar-date {
-    background: linear-gradient(135deg, #c53030, #e53e3e);
+    background: linear-gradient(135deg, #40E0D0, #96DED1);
     color: white;
     border-radius: 12px;
     padding: 15px;
@@ -830,7 +830,7 @@ section {
 
 .calendar-category {
     background: #edf2f7;
-    color: #4a5568;
+    color: #40E0D0;
     padding: 4px 12px;
     border-radius: 15px;
     font-size: 0.8rem;
@@ -842,7 +842,7 @@ section {
 /* Donate Section */
 .donate {
     padding: 80px 0;
-    background: linear-gradient(135deg, #1a365d, #2d3748);
+    background: linear-gradient(135deg, #40E0D0, #96DED1);
     color: white;
 }
 
@@ -919,8 +919,8 @@ section {
 
 .amount-btn:hover,
 .amount-btn.active {
-    background: #c53030;
-    border-color: #c53030;
+    background: #40E0D0;
+    border-color: #40E0D0;
 }
 
 .form-group {
@@ -954,7 +954,7 @@ section {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #c53030;
+    border-color: #40E0D0;
     background: rgba(255, 255, 255, 0.15);
 }
 
@@ -1000,7 +1000,7 @@ section {
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #c53030;
+    color: #40E0D0;
     margin-top: 5px;
 }
 
@@ -1029,12 +1029,12 @@ section {
 .contact-form .form-group textarea {
     background: #f7fafc;
     border: 2px solid #e2e8f0;
-    color: #2d3748;
+    color: #96DED1;
 }
 
 .contact-form .form-group input:focus,
 .contact-form .form-group textarea:focus {
-    border-color: #c53030;
+    border-color: #40E0D0;
     background: white;
 }
 
@@ -1047,7 +1047,7 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    color: #c53030;
+    color: #40E0D0;
     text-decoration: none;
     font-size: 0.9rem;
     margin-top: 8px;
@@ -1055,7 +1055,7 @@ section {
 }
 
 .map-link:hover {
-    color: #e53e3e;
+    color: #96DED1;
     text-decoration: underline;
 }
 
@@ -1114,13 +1114,13 @@ section {
 
 .map-info h3 {
     font-family: 'Playfair Display', serif;
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 1.3rem;
     margin-bottom: 5px;
 }
 
 .map-info p {
-    color: #4a5568;
+    color: #40E0D0;
     margin-bottom: 15px;
     font-size: 0.95rem;
 }
@@ -1240,7 +1240,7 @@ section {
 }
 
 .social-links a:hover {
-    background: #c53030;
+    background: #40E0D0;
     transform: translateY(-3px);
 }
 
@@ -1388,7 +1388,7 @@ section {
 }
 
 .leader-card h3 {
-    color: #c53030;
+    color: #40E0D0;
     font-size: 1.1rem;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -1413,7 +1413,7 @@ section {
 }
 
 .course-details h4 {
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
@@ -1430,7 +1430,7 @@ section {
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #c53030;
+    color: #40E0D0;
     font-weight: 600;
     font-size: 0.9rem;
 }
@@ -1440,7 +1440,7 @@ section {
 }
 
 .course-requirements h4 {
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
@@ -1451,7 +1451,7 @@ section {
 }
 
 .course-requirements ul li {
-    color: #4a5568;
+    color: #40E0D0;
     padding: 3px 0;
     position: relative;
     padding-left: 20px;
@@ -1461,7 +1461,7 @@ section {
     content: '•';
     position: absolute;
     left: 0;
-    color: #c53030;
+    color: #40E0D0;
     font-weight: bold;
 }
 
@@ -1474,7 +1474,7 @@ section {
 .admission h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #40E0D0;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1497,7 +1497,7 @@ section {
 .step-number {
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #c53030, #e53e3e);
+    background: linear-gradient(135deg, #40E0D0, #96DED1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1509,14 +1509,14 @@ section {
 }
 
 .step h3 {
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 1.3rem;
     margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
 }
 
 .step p {
-    color: #4a5568;
+    color: #40E0D0;
     line-height: 1.6;
 }
 
@@ -1565,12 +1565,12 @@ section {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border-top: 4px solid #c53030;
+    border-top: 4px solid #40E0D0;
 }
 
 .semester-card h2 {
     font-family: 'Playfair Display', serif;
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 2rem;
     margin-bottom: 25px;
 }
@@ -1585,12 +1585,12 @@ section {
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #4a5568;
+    color: #40E0D0;
     font-size: 1rem;
 }
 
 .detail-item i {
-    color: #c53030;
+    color: #40E0D0;
     font-size: 1.2rem;
 }
 
@@ -1602,7 +1602,7 @@ section {
 .calendar-events h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #40E0D0;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1613,7 +1613,7 @@ section {
 }
 
 .calendar-category.spiritual {
-    background: #c53030;
+    background: #40E0D0;
     color: white;
 }
 
@@ -1646,7 +1646,7 @@ section {
 .academic-year h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #40E0D0;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1662,18 +1662,18 @@ section {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #c53030;
+    border-left: 4px solid #40E0D0;
 }
 
 .semester-block h3 {
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 1.5rem;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
 }
 
 .semester-info p {
-    color: #4a5568;
+    color: #40E0D0;
     margin-bottom: 10px;
     line-height: 1.6;
 }
@@ -1687,7 +1687,7 @@ section {
 .notices h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #40E0D0;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1702,7 +1702,7 @@ section {
     background: #fff5f5;
     padding: 25px;
     border-radius: 15px;
-    border-left: 4px solid #c53030;
+    border-left: 4px solid #40E0D0;
     transition: transform 0.3s ease;
 }
 
@@ -1714,7 +1714,7 @@ section {
 .notice-icon {
     width: 50px;
     height: 50px;
-    background: #c53030;
+    background: #40E0D0;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1725,14 +1725,14 @@ section {
 }
 
 .notice-card h3 {
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 1.2rem;
     margin-bottom: 10px;
     font-family: 'Playfair Display', serif;
 }
 
 .notice-card p {
-    color: #4a5568;
+    color: #40E0D0;
     line-height: 1.6;
     font-size: 0.95rem;
 }
@@ -1746,7 +1746,7 @@ section {
 .donation-impact h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #40E0D0;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1774,7 +1774,7 @@ section {
 .impact-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #c53030, #e53e3e);
+    background: linear-gradient(135deg, #40E0D0, #96DED1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1785,20 +1785,20 @@ section {
 }
 
 .impact-card h3 {
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 1.3rem;
     margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
 }
 
 .impact-card p {
-    color: #4a5568;
+    color: #40E0D0;
     line-height: 1.6;
     margin-bottom: 15px;
 }
 
 .impact-amount {
-    background: #c53030;
+    background: #40E0D0;
     color: white;
     padding: 8px 15px;
     border-radius: 20px;
@@ -1817,19 +1817,19 @@ section {
     background: white;
     padding: 25px;
     border-radius: 15px;
-    border-left: 4px solid #c53030;
+    border-left: 4px solid #40E0D0;
     margin-top: 30px;
 }
 
 .donation-testimonial blockquote {
     font-style: italic;
-    color: #4a5568;
+    color: #40E0D0;
     line-height: 1.7;
     margin-bottom: 15px;
 }
 
 .donation-testimonial cite {
-    color: #c53030;
+    color: #40E0D0;
     font-weight: 600;
 }
 
@@ -1860,8 +1860,8 @@ section {
 
 .type-btn.active,
 .type-btn:hover {
-    border-color: #c53030;
-    background: #c53030;
+    border-color: #40E0D0;
+    background: #40E0D0;
     color: white;
 }
 
@@ -1877,7 +1877,7 @@ section {
 
 .form-select:focus {
     outline: none;
-    border-color: #c53030;
+    border-color: #40E0D0;
 }
 
 .form-row {
@@ -1891,7 +1891,7 @@ section {
     align-items: center;
     gap: 10px;
     cursor: pointer;
-    color: #4a5568;
+    color: #40E0D0;
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -1903,7 +1903,7 @@ section {
     align-items: center;
     gap: 8px;
     justify-content: center;
-    color: #4a5568;
+    color: #40E0D0;
     font-size: 0.9rem;
     margin-top: 15px;
     padding-top: 15px;
@@ -1919,7 +1919,7 @@ section {
 .other-ways h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
-    color: #1a365d;
+    color: #40E0D0;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -1957,14 +1957,14 @@ section {
 }
 
 .way-card h3 {
-    color: #1a365d;
+    color: #40E0D0;
     font-size: 1.3rem;
     margin-bottom: 15px;
     font-family: 'Playfair Display', serif;
 }
 
 .way-card p {
-    color: #4a5568;
+    color: #40E0D0;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -1991,7 +1991,7 @@ section {
 
 .volunteer-list li,
 .donation-list li {
-    color: #4a5568;
+    color: #40E0D0;
     padding: 3px 0;
     position: relative;
     padding-left: 20px;
@@ -2003,7 +2003,7 @@ section {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #c53030;
+    color: #40E0D0;
     font-weight: bold;
 }
 
@@ -2166,14 +2166,14 @@ section {
 .donation-contact h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
-    color: #1a365d;
+    color: #40E0D0;
     margin-bottom: 20px;
 }
 
 .calendar-contact p,
 .donation-contact p {
     font-size: 1.1rem;
-    color: #4a5568;
+    color: #40E0D0;
     margin-bottom: 30px;
     line-height: 1.7;
 }
