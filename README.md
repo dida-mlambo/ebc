@@ -143,3 +143,4 @@ For technical support or customization requests, contact your web developer or t
 **Created for Evangel Bible College**  
 *Assemblies of God General Council*  
 *Chitungwiza, Zimbabwe*
+
