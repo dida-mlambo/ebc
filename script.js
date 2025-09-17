@@ -331,12 +331,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add any additional initialization here
     initializeSearch();
     
-    // Ensure scrolling is always enabled (fallback for all pages)
+    // FORCE SCROLLING TO WORK ON ALL PAGES
     setTimeout(() => {
-        document.body.style.overflow = '';
-        document.documentElement.style.overflow = '';
+        document.body.style.overflow = 'visible';
+        document.body.style.overflowY = 'visible';
+        document.documentElement.style.overflow = 'visible';
+        document.documentElement.style.overflowY = 'scroll';
         document.body.classList.remove('loading');
-    }, 100);
+        
+        // Additional fallback
+        document.body.style.height = 'auto';
+        document.documentElement.style.height = 'auto';
+        
+        console.log('Scrolling forcibly enabled');
+    }, 50);
+    
+    // Additional safety check
+    window.addEventListener('load', function() {
+        document.body.style.overflow = 'visible';
+        document.documentElement.style.overflowY = 'scroll';
+        console.log('Window loaded - scrolling enabled');
+    });
 });
 
 // Slider functionality removed to eliminate glitches

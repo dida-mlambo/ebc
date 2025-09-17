@@ -16,23 +16,34 @@ body.loading {
     overflow: hidden;
 }
 
-/* Ensure proper scrolling on all pages */
-html, body {
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: auto;
-    min-height: 100vh;
+/* FORCE PROPER SCROLLING ON ALL PAGES */
+html {
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    height: auto !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden !important;
+    overflow-y: visible !important;
+    height: auto !important;
+    min-height: 100vh !important;
+    position: relative !important;
 }
 
 /* Force minimum content height for scrolling */
 main {
-    min-height: 100vh;
+    min-height: 150vh !important;
+    position: relative !important;
 }
 
-/* Ensure sections have proper spacing */
+/* Ensure sections have proper spacing and height */
 section {
-    position: relative;
-    z-index: 1;
+    position: relative !important;
+    z-index: 1 !important;
+    min-height: 400px !important;
+    display: block !important;
 }
 
 /* Loading Screen */
